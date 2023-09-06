@@ -1,5 +1,6 @@
 class Arte {
   String requerimento;
+  String tipoChecklist;
   DateTime dataInicio;
   DateTime dataFinalizacao;
   bool status;
@@ -7,6 +8,7 @@ class Arte {
 
   Arte({
     required this.requerimento,
+    required this.tipoChecklist,
     required this.dataInicio,
     required this.dataFinalizacao,
     required this.status,

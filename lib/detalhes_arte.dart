@@ -24,7 +24,10 @@ class DetalhesArteState extends State<DetalhesArte> {
           Text('Status: ${widget.arte.status ? 'Concluído' : 'Pendente'}'),
           Text('Data Início: ${widget.arte.dataInicio.toString()}'),
           Text('Data Finalização: ${widget.arte.dataFinalizacao.toString()}'),
-          const Text('Checklist:'),
+          const SizedBox(
+            width: 50,
+          ),
+          Text(widget.arte.tipoChecklist),
           Expanded(
             child: ListView.builder(
               itemCount: widget.arte.checklist.length,
