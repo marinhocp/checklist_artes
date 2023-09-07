@@ -1,9 +1,7 @@
-import 'package:checklist_artes/dados/arte_data.dart';
 import 'package:flutter/material.dart';
 import '../models/arte_model.dart';
 import '../components/progress_indicator.dart';
 import '../utilities/util.dart';
-import 'adicionar_arte.dart';
 import 'checklist_personalizado.dart';
 
 class DetalhesArte extends StatefulWidget {

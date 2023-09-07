@@ -8,7 +8,8 @@ class AdicionarArte extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 60, 62, 63),
-        title: const Text('Adicionar Arte',
+        title: const Text(
+          'Adicionar Arte',
           style: TextStyle(color: Color.fromARGB(255, 220, 166, 104)),
         ),
       ),
@@ -36,7 +37,7 @@ class AdicionarArte extends StatelessWidget {
                 // code when the user saves the form.
               },
               validator: (String? value) {
-                return (value != null && TextInputType != value.characters) ? 'Use somente números' : null;
+                return (value != null) ? 'Use somente números' : null;
               },
             ),
             const SizedBox(
@@ -61,7 +62,7 @@ class AdicionarArte extends StatelessWidget {
                 // code when the user saves the form.
               },
               validator: (String? value) {
-                return (value != null && TextInputType != value.characters) ? 'Use somente números' : null;
+                return (value != null) ? 'Use somente números' : null;
               },
             ),
           ],

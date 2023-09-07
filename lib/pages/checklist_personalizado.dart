@@ -37,7 +37,7 @@ class Personalizado extends StatelessWidget {
                 // code when the user saves the form.
               },
               validator: (String? value) {
-                return (value != null && TextInputType != value.characters) ? 'Use somente números' : null;
+                return (value != null) ? 'Use somente números' : null;
               },
             ),
             const SizedBox(
@@ -62,7 +62,7 @@ class Personalizado extends StatelessWidget {
                 // code when the user saves the form.
               },
               validator: (String? value) {
-                return (value != null && TextInputType != value.characters) ? 'Use somente números' : null;
+                return (value != null) ? 'Use somente números' : null;
               },
             ),
           ],
