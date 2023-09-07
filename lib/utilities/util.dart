@@ -1,4 +1,4 @@
-import 'arte_model.dart';
+import '../models/arte_model.dart';
 
 double calcularProgresso(ArteModel arte) {
   int totalItens = arte.checklist.length;

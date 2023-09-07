@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:window_manager/window_manager.dart';
 
-import 'arte_data.dart';
-import 'lista_artes.dart';
+import 'dados/arte_data.dart';
+import 'pages/lista_artes.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -10,12 +10,12 @@ void main() async {
 
   WindowOptions windowOptions = const WindowOptions(
     size: Size(400, 720),
-    center: false,
+    center: true,
     backgroundColor: Colors.transparent,
     skipTaskbar: false,
     windowButtonVisibility: false,
     alwaysOnTop: true,
-    title: "CHECKLIST DE ARTES",
+    title: "::: ENGSOFT ::: ",
   );
   windowManager.waitUntilReadyToShow(windowOptions, () async {
     await windowManager.show();
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      themeMode: ThemeMode.dark,
+      theme: ThemeData(brightness: Brightness.light, primaryColor: const Color.fromARGB(66, 109, 108, 108)),
       debugShowCheckedModeBanner: false,
       home: ListaArtes(artes: artes),
     );

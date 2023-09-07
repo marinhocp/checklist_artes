@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'arte_model.dart';
-import 'detalhes_arte.dart';
+import '../models/arte_model.dart';
+import '../pages/detalhes_arte.dart';
 
 class CustomSearchDelegate extends SearchDelegate<String> {
   final List<ArteModel> listaDeArtes; // Lista de objetos Arte
