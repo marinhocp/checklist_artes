@@ -1,4 +1,4 @@
-class Arte {
+class ArteModel {
   String requerimento;
   String tipoChecklist;
   DateTime dataInicio;
@@ -6,14 +6,7 @@ class Arte {
   bool status;
   List<ChecklistItem> checklist;
 
-  Arte({
-    required this.requerimento,
-    required this.tipoChecklist,
-    required this.dataInicio,
-    required this.dataFinalizacao,
-    required this.status,
-    required this.checklist,
-  });
+  ArteModel({required this.requerimento, required this.tipoChecklist, required this.dataInicio, required this.dataFinalizacao, required this.status, required this.checklist});
 }
 
 class ChecklistItem {
